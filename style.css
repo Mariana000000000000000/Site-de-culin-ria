@@ -47,3 +47,25 @@ main {
     gap: 50px;
     flex-wrap: wrap;
 }
+.receitas {
+    display: flex;
+    justify-content: center;
+    background-color: var(--branco);
+    border-radius: 10px;
+    padding: 30px;
+    width: 80%;
+    min-width: 280px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.receitas:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.receitas a {
+    color: var(--verde);
+    font-size: 5rem;
+    text-decoration: none;
+}
