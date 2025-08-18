@@ -1,33 +1,78 @@
-/* Estilo geral */
-body {
+/* Reset */
+* {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #fffaf3 url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* textura de papel */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff8f0;
+    color: #333;
+    text-align: center;
 }
 
 /* Cabeçalho */
 header {
-    background: linear-gradient(135deg, #d2691e, #8b4513); /* degradê marrom chocolate */
-    text-align: center;
-    padding: 30px 20px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    background: linear-gradient(135deg, #ff6f61, #ffb347);
+    padding: 40px 20px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 header h1 {
-    color: #fff5e1;
-    font-size: 3rem;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
-    margin: 0;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-/* Conteúdo principal */
-main {
+header p {
+    font-size: 1.2rem;
+}
+
+/* Container das receitas */
+.container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    gap: 25px;
+    max-width: 900px;
 }
 
-/* Blocos de receitas */
-.materia {
+/* Cartões */
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.2s, box-shadow 0.3s;
+    width: 220px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* Links dentro dos cartões */
+.card a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ff6f61;
+    display: block;
+}
+
+.card a:hover {
+    color: #ff4500;
+}
+
+/* Rodapé */
+footer {
+    background: #ff6f61;
+    color: white;
+    padding: 15px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
